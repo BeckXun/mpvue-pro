@@ -6,11 +6,6 @@
             @click="bindViewTap">
             <img
                 class="userinfo-avatar"
-                v-if="userInfo.avatarUrl"
-                :src="userInfo.avatarUrl"
-                background-size="cover" >
-            <img
-                class="userinfo-avatar"
                 src="/static/images/user.png"
                 background-size="cover" >
 
@@ -25,7 +20,12 @@
             </div>
         </div>
 
-        <form class="form-container">
+        MyDate:
+        <MyDate :data="1574812419795"/>
+        <!-- <MyDate :data="+new Date()"/> -->
+        <!-- <MyDate :data="undefined"/> -->
+
+        <!-- <form class="form-container">
             <input
                 type="text"
                 class="form-control"
@@ -41,7 +41,7 @@
                 class="form-control"
                 v-model.lazy="motto"
                 placeholder="v-model.lazy" >
-        </form>
+        </form> -->
 
         <a
             href="/pages/counter/main"
@@ -65,7 +65,6 @@ export default {
             motto: 'Hello miniprograme',
             userInfo: {
                 nickName: 'mpvue',
-                avatarUrl: 'http://mpvue.com/assets/logo.png',
             },
         };
     },
