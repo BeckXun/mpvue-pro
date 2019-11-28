@@ -1,6 +1,6 @@
-# mpvue-test
+# mpvue-pro
 
-> A Mpvue project
+> 在mpvue为基础上二次封装的业务框架，致力于开箱即用
 
 ## Build Setup
 
