@@ -1,53 +1,4 @@
 // http://eslint.org/docs/user-guide/configuring
-
-// module.exports = {
-//   root: true,
-//   parser: 'babel-eslint',
-//   parserOptions: {
-//     sourceType: 'module'
-//   },
-//   env: {
-//     browser: false,
-//     node: true,
-//     es6: true
-//   },
-//   // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-//   extends: 'standard',
-//   // required to lint *.vue files
-//   plugins: [
-//     'html'
-//   ],
-//   // add your custom rules here
-//   'rules': {
-//     // allow paren-less arrow functions
-//     'arrow-parens': 0,
-//     // allow async-await
-//     'generator-star-spacing': 0,
-//     // allow debugger during development
-//     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-//     'indent': [
-//         'error',
-//         4,
-//         {
-//             "SwitchCase": 1
-//         }
-//     ],
-//   },
-//   globals: {
-//     App: true,
-//     Page: true,
-//     wx: true,
-//     swan: true,
-//     tt: true,
-//     my: true,
-//     getApp: true,
-//     getPage: true,
-//     requirePlugin: true,
-//     mpvue: true,
-//     mpvuePlatform: true
-//   }
-// }
-
 const resolve = require('path').resolve;
 
 module.exports = {
@@ -68,7 +19,7 @@ module.exports = {
         // https://github.com/vuejs/eslint-plugin-vue#priority-b-strongly-recommended-improving-readability
         'plugin:vue/strongly-recommended',
 
-        // 英文：https://github.com/airbnb/javascript
+        // English：https://github.com/airbnb/javascript
         // 中文：https://github.com/sivan/javascript-style-guide/blob/master/es5/README.md
         'airbnb-base',
     ],
