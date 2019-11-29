@@ -82,7 +82,7 @@ module.exports = {
             webpack: {
                 config: {
                     resolve: {
-                        extensions: ['.js', '.vue', '.json'],
+                        extensions: ['.js', '.vue', '.json', '.scss'],
                         alias: {
                             'vue': 'mpvue',
                             '@': resolve(__dirname, 'src'),
