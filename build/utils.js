@@ -52,18 +52,17 @@ exports.cssLoaders = function (options) {
     }
 
     // 只对 sass 文件使用全局配置
-    // if (loader === 'sass' || loader === 'scss') {
-    //     loaders.push({
-    //         loader: 'sass-resources-loader',
-    //         options: {
-    //             resources: [
-    //                 path.resolve(__dirname, '../src/assets/styles/variable.scss'),
-    //                 path.resolve(__dirname, '../src/assets/styles/mixins.scss'),
-    //                 path.resolve(__dirname, '../src/assets/styles/theme.scss'),
-    //             ],
-    //         },
-    //     });
-    // }
+    if (loader === 'sass' || loader === 'scss') {
+        loaders.push({
+            loader: 'sass-resources-loader',
+            options: {
+                resources: [
+                    // path.resolve(__dirname, '../src/assets/styles/variable.scss'),
+                    path.resolve(__dirname, '../src/assets/styles/mixins.scss'),
+                ],
+            },
+        });
+    }
 
     // Extract CSS when that option is specified
     // (which is the case during production build)
@@ -76,7 +75,7 @@ exports.cssLoaders = function (options) {
       return ['vue-style-loader'].concat(loaders)
     }
   }
-  console.log(generateLoaders('sass'));
+
   // https://vue-loader.vuejs.org/en/configurations/extract-css.html
   return {
     css: generateLoaders(),
