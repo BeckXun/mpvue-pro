@@ -1,5 +1,4 @@
 var path = require('path')
-var fs = require('fs')
 var utils = require('./utils')
 var config = require('../config')
 var webpack = require('webpack')
@@ -122,6 +121,14 @@ let baseWebpackConfig = {
       {
         from: path.resolve(__dirname, '../static'),
         to: path.resolve(config.build.assetsRoot, './static'),
+        ignore: ['.*']
+      }
+    ]),
+    // 复制vant到dist的static目录下 方便直接引用
+    new CopyWebpackPlugin([
+      {
+        from: resolve('node_modules/vant-weapp/dist'),
+        to: resolve('dist/wx/static/vant-weapp'),
         ignore: ['.*']
       }
     ])

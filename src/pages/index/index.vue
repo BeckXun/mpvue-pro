@@ -192,6 +192,13 @@ export default {
             // wx.showNavigationBarLoading();
 
             // setTimeout(() => wx.hideNavigationBarLoading(), 3000);
+
+            this.$router.push('/pages/counter/main');
+            // mpvue.switchTab('/pages/logs');
+            // this.$router.push({
+            //     path: '/pages/logs/main',
+            //     isTab: true,
+            // });
         },
         formReset() {
             console.log('form发生了reset事件');
@@ -208,8 +215,10 @@ export default {
     mounted() {
         // query 需要在mounted后获取
         console.log(this.$root.$mp.query);
+        // 配置mpvue-router-patch后
+        console.log(this.$route.query);
+        // 获取store
         console.log(this.$store);
-        console.log(4321);
     },
 };
 </script>

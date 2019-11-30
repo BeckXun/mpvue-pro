@@ -4812,6 +4812,11 @@ mpvue-loader@^2.0.0:
     vue-style-loader "^3.0.0"
     vue-template-es2015-compiler "^1.5.3"
 
+mpvue-router-patch@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/mpvue-router-patch/-/mpvue-router-patch-2.0.0.tgz#7cc87219133d7743a71ab73fadaf3d31f20cbbfb"
+  integrity sha512-gcaedCBaniOWwDjMSp0VSwGV9tUKrkUwYoY8LHxqcs2/75Amd75Juaw3qfdEOq2IlN8ayccCUI0kZjXMgQemVg==
+
 mpvue-template-compiler@^2.0.0:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/mpvue-template-compiler/-/mpvue-template-compiler-2.0.6.tgz#692dac244ff9babae9b7d206e6572d0f8e34104a"
@@ -7835,6 +7840,11 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+vant-weapp@^0.5.23:
+  version "0.5.23"
+  resolved "https://registry.yarnpkg.com/vant-weapp/-/vant-weapp-0.5.23.tgz#e3dcf162e15f74e6637a9b6f88e324acf10b5155"
+  integrity sha512-kI0uYbF5rp85u+puNtXUMqnDbefUvAhJ+sC0Tfx8H95fmUM+MpvEaNxR6JdTYv1JMOL++D3HkpNDxSr4ClrNFg==
 
 vary@~1.1.2:
   version "1.1.2"
