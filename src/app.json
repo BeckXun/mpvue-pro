@@ -42,6 +42,10 @@
         "position": "bottom"
     },
     "usingComponents": {
-        "van-button": "static/vant-weapp/button/index"
+        "van-button": "static/vant-weapp/button/index",
+        "van-image": "static/vant-weapp/image/index",
+        "van-cell": "static/vant-weapp/cell/index",
+        "van-loading": "static/vant-weapp/loading/index",
+        "van-search": "static/vant-weapp/search/index"
     }
 }

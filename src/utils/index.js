@@ -3,7 +3,7 @@ function formatNumber(n) {
     return str[1] ? str : `0${str}`;
 }
 
-export function formatTime(date) {
+function formatTime(date) {
     const year = date.getFullYear();
     const month = date.getMonth() + 1;
     const day = date.getDate();
@@ -18,7 +18,16 @@ export function formatTime(date) {
     return `${t1} ${t2}`;
 }
 
-export default {
+function debounce(fn, delay) {
+    let timer;
+    return function debounceFn(...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => fn.apply(this, args), delay);
+    };
+}
+
+export {
     formatNumber,
     formatTime,
+    debounce,
 };

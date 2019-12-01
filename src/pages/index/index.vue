@@ -83,7 +83,37 @@
         <div @click="req">test request</div>
         <div @click="interactive">test toast</div>
 
-        <van-button type="primary">按钮</van-button>
+        <van-button
+            type="primary"
+            size="large">按钮</van-button>
+
+        <van-image
+            round
+            width="10rem"
+            height="10rem"
+            fit="cover"
+            lazy-load
+            src="https://img.yzcdn.cn/vant/cat.jpeg"
+        />
+
+        <van-image
+            width="100"
+            height="100"
+            use-loading-slot>
+            <van-loading
+                slot="loading"
+                type="spinner"
+                size="20"
+                vertical
+            />
+        </van-image>
+
+        <van-search
+            placeholder="搜索附近充电桩"
+            maxlength="20"
+            clearable
+            @change="debounceSearch"
+        />
 
         <div class="all">
             <div class="left"/>
@@ -95,6 +125,7 @@
 <script>
 import card from '@/components/card';
 import { getJson } from '@/utils/api';
+import { debounce } from '@/utils/index';
 
 export default {
     data() {
@@ -113,6 +144,7 @@ export default {
                 { name: 'ENG', value: '英国' },
                 { name: 'TUR', value: '法国' },
             ],
+            debounceSearch: debounce(this.searchHandler, 500),
         };
     },
 
@@ -205,6 +237,9 @@ export default {
         },
         formSubmit(e) {
             console.log('form发生了submit事件，携带数据为：', e.mp.detail.value);
+        },
+        searchHandler(e) {
+            console.log(e.mp.detail, 'searchHandler');
         },
     },
 

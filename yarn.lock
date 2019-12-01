@@ -7841,10 +7841,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vant-weapp@^0.5.23:
-  version "0.5.23"
-  resolved "https://registry.yarnpkg.com/vant-weapp/-/vant-weapp-0.5.23.tgz#e3dcf162e15f74e6637a9b6f88e324acf10b5155"
-  integrity sha512-kI0uYbF5rp85u+puNtXUMqnDbefUvAhJ+sC0Tfx8H95fmUM+MpvEaNxR6JdTYv1JMOL++D3HkpNDxSr4ClrNFg==
+vant-weapp@^1.0.0-beta.4:
+  version "1.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/vant-weapp/-/vant-weapp-1.0.0-beta.4.tgz#32914f5c7f5de1a7a70582c060abe4b1f9f804ba"
+  integrity sha512-oZZ4MUgrgMMeB40cJkREmPM2Ad/ZmJaqAn4/xP1jjpXIQi/ds0ir4ige0nwIXL+3uUD4ARnq9tHy4Ds0K1iwFg==
 
 vary@~1.1.2:
   version "1.1.2"
